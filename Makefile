@@ -16,5 +16,8 @@ add:
 add-dev:
 	- ${DOCKER_RUN} npm install -D ${call args}
 
-eslint-fix:
+code-review:
 	- ${DOCKER_RUN} npm run code-review	
+
+test:
+	- ${DOCKER_RUN} npm test
